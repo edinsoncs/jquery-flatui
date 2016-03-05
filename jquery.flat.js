@@ -20,11 +20,19 @@ $.fn.flat = function(color, a){
 						'#9684A3','#8870FF','#888888','#897FBA','#8870FF','#2C82C9',
 						'#2CC990','#EEE657','#FCB941','#FC6042','#3E4651','#F1654C',
 						'#00B5B5','#D4D4D4'];
-		shadows = ['0 3px #C3C7AE', '0 4px red'];
+		shadows = ['0 3px #C3C7AE', '0 4px #67C8AD'];
 		var inFind = select;
+
 		if(inFind == 'flatuno'){
 			var x =	colors[0];
-			var t = shadows[0];
+			return x;
+		}
+		else if(inFind == 'flatdos'){
+			var x = colors[1];
+			return x;
+		}
+		else if(inFind == 'flat-tres'){
+			var x = colors[5];
 			return x;
 		}
 
@@ -32,10 +40,30 @@ $.fn.flat = function(color, a){
 
 	inColor();
 
-	if(recept == 'flatuno' || receptIn == 'a') {
+	if(recept == 'flatuno') {
 		this.css({
 			'background': inColor('flatuno'),
 			'box-shadow': shadows[0],
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'outline': 'medium none'
+		});
+	}
+	else if(recept == 'flatdos'){
+		this.css({
+			'background': inColor('flatdos'),
+			'box-shadow': shadows[0],
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'outline': 'medium none'
+		});
+	}
+	else if(recept == 'flat-tres'){
+		this.css({
+			'background': inColor('flat-tres'),
+			'box-shadow': shadows[1],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',

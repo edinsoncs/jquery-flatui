@@ -5,15 +5,31 @@
 	<title>Document</title>
 	<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 	<script src="jquery.flat.js"></script>
+	<style type="text/css">
+	a {
+		display: block;
+		width: 20%;
+	}
+	</style>
 </head>
 <body>
 
 	
-	<a href="#">Hola soy un button</a>
+	<a class="ab" href="#">Hola soy un button</a>
+
+	<br>
+	
+	<a class="as" href="#">Hola soy un button</a>
+
+	<br>
+
+	<a class="acx">Hola soy un button</a>
 	
 
 	<script>
-		$("a").flat('flatuno', 'a');
+		$(".ab").flat('flatuno', 'a');
+		$(".as").flat('flatdos', 'a');
+		$(".acx").flat('flat-tres', 'a');
 	</script>
 </body>
 </html>
