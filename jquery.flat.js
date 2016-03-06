@@ -22,7 +22,7 @@ $.fn.flat = function(color, a){
 						'#00B5B5','#D4D4D4'];
 		shadows = ['0 3px 0 #C3C7AE', '0 4px 0 #67C8AD', '0 4px 0 #64CEB0', '0 4px 0 #4C381B',
 
-					'0 4px 0 #819270', '0 4px 0 #78744B', '0 4px 0 #B54406'];
+					'0 4px 0 #819270', '0 4px 0 #78744B', '0 4px 0 #B54406', '0 4px 0 #361E21', '0 4px 0 #26232A'];
 		var inFind = select;
 
 		if(inFind == 'flatuno'){
@@ -59,6 +59,14 @@ $.fn.flat = function(color, a){
 		}
 		else if(inFind == 'flat-nueve'){
 			var x = colors[11];
+			return x;
+		}
+		else if(inFind == 'flat-diez'){
+			var x = colors[12];
+			return x;
+		}
+		else if(inFind == 'flat-once'){
+			var x = colors[13];
 			return x;
 		}
 
@@ -150,6 +158,26 @@ $.fn.flat = function(color, a){
 		this.css({
 			'background': inColor('flat-nueve'),
 			'box-shadow': shadows[6],
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'outline': 'medium none'
+		});
+	}
+	else if(recept == 'flat-diez') {
+		this.css({
+			'background': inColor('flat-diez'),
+			'box-shadow': shadows[7],
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'outline': 'medium none'
+		});
+	}
+	else if(recept == 'flat-once'){
+		this.css({
+			'background': inColor('flat-once'),
+			'box-shadow': shadows[8],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
