@@ -22,7 +22,10 @@ $.fn.flat = function(color, a){
 						'#00B5B5','#D4D4D4'];
 		shadows = ['0 3px 0 #C3C7AE', '0 4px 0 #67C8AD', '0 4px 0 #64CEB0', '0 4px 0 #4C381B',
 
-					'0 4px 0 #819270', '0 4px 0 #78744B', '0 4px 0 #B54406', '0 4px 0 #361E21', '0 4px 0 #26232A'];
+					'0 4px 0 #819270', '0 4px 0 #78744B', '0 4px 0 #B54406', '0 4px 0 #361E21', '0 4px 0 #26232A',
+
+					'0 4px 0 #5C5231', ' 0 4px 0 #232516', '0 4px 0 #5E5536'   ];
+
 		var inFind = select;
 
 		if(inFind == 'flatuno'){
@@ -67,6 +70,18 @@ $.fn.flat = function(color, a){
 		}
 		else if(inFind == 'flat-once'){
 			var x = colors[13];
+			return x;
+		}
+		else if(inFind == 'flat-dosce') {
+			var x = colors[14];
+			return x;
+		}
+		else if(inFind == 'flat-trece') {
+			var x = colors[15];
+			return x;
+		}
+		else if(inFind == 'flat-catorce') {
+			var x = colors[16];
 			return x;
 		}
 
@@ -181,6 +196,36 @@ $.fn.flat = function(color, a){
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'outline': 'medium none'
+		});
+	}
+	else if(recept == 'flat-dosce'){
+		this.css({
+			'background': inColor('flat-dosce'),
+			'box-shadow': shadows[9],
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'outline': 'medium none'
+		})
+	}
+	else if(recept == 'flat-trece') {
+		this.css({
+			'background': inColor('flat-trece'),
+			'box-shadow': shadows[10],
+			'color': 'white',
+			'padding': '0.8em 1.3em',
+			'text-decoration': 'none',
+			'outline': 'medium none'
+		})
+	}
+	else if(recept == 'flat-catorce') {
+		this.css({
+			'background': inColor('flat-catorce'),
+			'box-shadow': shadows[11],
+			'color': 'white',
+			'padding': '0.8em 1.3em',
+			'text-decoration': 'none',
 			'outline': 'medium none'
 		});
 	}
