@@ -24,7 +24,9 @@ $.fn.flat = function(color, a){
 
 					'0 4px 0 #819270', '0 4px 0 #78744B', '0 4px 0 #B54406', '0 4px 0 #361E21', '0 4px 0 #26232A',
 
-					'0 4px 0 #5C5231', ' 0 4px 0 #232516', '0 4px 0 #5E5536', '0 4px 0 #333521', '0 4px 0 #D14409' ];
+					'0 4px 0 #5C5231', ' 0 4px 0 #232516', '0 4px 0 #5E5536', '0 4px 0 #333521', '0 4px 0 #D14409',
+
+					'0 4px 0 #D66214'	 ];
 
 		var inFind = select;
 
@@ -92,7 +94,10 @@ $.fn.flat = function(color, a){
 			var x = colors[18];
 			return x;
 		}
-
+		else if(inFind = 'flat-diesisiete') {
+			var x = colors[19];
+			return x;
+		}
 	}
 
 	inColor();
@@ -251,6 +256,16 @@ $.fn.flat = function(color, a){
 		this.css({
 			'background': inColor('flat-diesiseis'),
 			'box-shadow': shadows[13],
+			'color': 'white',
+			'padding': '0.8em 1.3em',
+			'text-decoration': 'none',
+			'outline': 'medium none'
+		});
+	}
+	else if(recept == 'flat-diesisiete') {
+		this.css({
+			'background': inColor('flat-diesisiete'),
+			'box-shadow': shadows[14],
 			'color': 'white',
 			'padding': '0.8em 1.3em',
 			'text-decoration': 'none',
