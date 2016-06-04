@@ -7,22 +7,13 @@ $.fn.flat = function(color, a){
 	var shadows;
 	
 	function inColor(select) {
-		var colors = ['#E0E4CC','#D6DAC2','#7BB0A6','#92F22A',
-						'#64DDBB','#7CEECE','#8F6F40','#6F532A','#523D1F','#A0B58D',
-						'#A19C69','#FD5B03','#63393E','#3C3741','#8C7E51','#54573A',
-						'#8C7E51','#54573A','#F04903','#FF7416','#F29B34',
-						'#D33257','#3D8EB9','#71BA51','#FEC606','#E75926','#EB6361',
-						'#EBBD63','#6C8784','#45362E','#87766C','#25373D','#CF000F',
-						'#E3000E','#E6DCDB','#D2D7D3','#E7E7E7','#282830','#BADA55',
-						'#1DABB8','#C82647','#FF6766','#60646D','#FFFFF7','#83D6DE',
-						'#97CE68','#EB9532','#EE543A','#D8335B','#953163','#422E39',
-						'#FACA9B','#FDD09F','#E7DF86','#C0BA78','#AAB69B','#9E906E',
-						'#9684A3','#8870FF','#888888','#897FBA','#8870FF','#2C82C9',
-						'#2CC990','#EEE657','#FCB941','#FC6042','#3E4651','#F1654C',
-						'#00B5B5','#D4D4D4'];
-		shadows = ['0 3px 0 #C3C7AE', '0 4px 0 #67C8AD', '0 4px 0 #64CEB0', '0 4px 0 #4C381B',
+		var colors = ['#1abc9c','#2ecc71','#3498db','#a366bc',
+						'#364c62','#f1c40f','#e67e22','#e74c3c','#1abc9c','#2ecc71', '#3498db', '#a366bc', '#364c62', '#f1c40f',
+						'#e67e22', '#e74c3c'
+						 ];
+		shadows = ['0 5px 0 #19a287', '0 5px 0 #239e57','0 5px 0 #2b7cb3', '0 5px 0 #8b56a0', '0 5px 0 #28394a',
 
-					'0 4px 0 #819270', '0 4px 0 #78744B', '0 4px 0 #B54406', '0 4px 0 #361E21', '0 4px 0 #26232A',
+					'0 5px 0 #cea70c', '0 5px 0 #a25816', '0 4px 0 #B54406', '0 4px 0 #361E21', '0 4px 0 #26232A',
 
 					'0 4px 0 #5C5231', ' 0 4px 0 #232516', '0 4px 0 #5E5536', '0 4px 0 #333521', '0 4px 0 #D14409',
 
@@ -34,70 +25,70 @@ $.fn.flat = function(color, a){
 			var x =	colors[0];
 			return x;
 		}
-		else if(inFind == 'flatdos'){
+		else if(inFind == 'flatdos') {
 			var x = colors[1];
 			return x;
 		}
-		else if(inFind == 'flat-tres'){
-			var x = colors[5];
+		else if(inFind == 'flattres'){
+			var x = colors[2];
 			return x;
 		}
-		else if(inFind == 'flat-cuatro') {
-			var x = colors[6];
+		else if(inFind == 'flatcuatro'){
+			var x = colors[3]
 			return x;
 		}
-		else if(inFind == 'flat-cinco'){
-			var x = colors[7];
+		else if(inFind == 'flatcinco'){
+			var x = colors[4]
 			return x;
 		}
-		else if(inFind == 'flat-seis'){
-			var x = colors[8];
+		else if(inFind == 'flatseis'){
+			var x = colors[5]
 			return x;
 		}
-		else if(inFind == 'flat-siete'){
-			var x = colors[9];
+		else if(inFind == 'flatsiete'){
+			var x = colors[6]
 			return x;
 		}
-		else if(inFind == 'flat-ocho'){
-			var x = colors[10];
+		else if(inFind == 'flatocho'){
+			var x = colors[7]
 			return x;
 		}
-		else if(inFind == 'flat-nueve'){
-			var x = colors[11];
+		else if(inFind == 'flat-t-dos'){
+			var x = colors[8]
+			return x
+		}
+		else if(inFind == 'flat-t-tres') {
+			var x = colors[9]
 			return x;
 		}
-		else if(inFind == 'flat-diez'){
-			var x = colors[12];
+		else if(inFind == 'flat-t-cuatro') {
+			var x = colors[10]
 			return x;
 		}
-		else if(inFind == 'flat-once'){
-			var x = colors[13];
+		else if(inFind == 'flat-t-cinco') {
+			var x = colors[11]
 			return x;
 		}
-		else if(inFind == 'flat-dosce') {
-			var x = colors[14];
+		else if(inFind == 'flat-t-six'){
+			var x = colors[12]
 			return x;
 		}
-		else if(inFind == 'flat-trece') {
-			var x = colors[15];
+		else if(inFind == 'flat-t-sevent'){
+			var x = colors[13]
 			return x;
 		}
-		else if(inFind == 'flat-catorce') {
-			var x = colors[16];
+
+		else if(inFind == 'flat-t-eight') {
+			var x = colors[14]
 			return x;
 		}
-		else if(inFind == 'flat-quince') {
-			var x = colors[17];
+
+		else if(inFind == 'flat-t-nine'){
+			var x = colors[15]
 			return x;
 		}
-		else if(inFind == 'flat-diesiseis') {
-			var x = colors[18];
-			return x;
-		}
-		else if(inFind = 'flat-diesisiete') {
-			var x = colors[19];
-			return x;
-		}
+		
+		
 	}
 
 	inColor();
@@ -109,167 +100,177 @@ $.fn.flat = function(color, a){
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
 	else if(recept == 'flatdos'){
 		this.css({
 			'background': inColor('flatdos'),
-			'box-shadow': shadows[0],
-			'color':'white',
-			'padding':'0.8em 1.3em',
-			'text-decoration':'none',
-			'outline': 'medium none'
-		});
-	}
-	else if(recept == 'flat-tres'){
-		this.css({
-			'background': inColor('flat-tres'),
 			'box-shadow': shadows[1],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-cuatro'){
+	else if(recept == 'flattres'){
 		this.css({
-			'background': inColor('flat-tres'),
+			'background': inColor('flattres'),
 			'box-shadow': shadows[2],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align':'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-cinco'){
+	else if(recept == 'flatcuatro'){
 		this.css({
-			'background': inColor('flat-cinco'),
+			'background': inColor('flatcuatro'),
 			'box-shadow': shadows[3],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-seis') {
+	else if(recept == 'flatcinco'){
 		this.css({
-			'background': inColor('flat-seis'),
+			'background': inColor('flatcinco'),
 			'box-shadow': shadows[4],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-siete') {
+	else if(recept == 'flatseis'){
 		this.css({
-			'background': inColor('flat-siete'),
-			'box-shadow': shadows[4],
-			'color':'white',
-			'padding':'0.8em 1.3em',
-			'text-decoration':'none',
-			'outline': 'medium none'
-		});
-	}
-	else if(recept == 'flat-ocho') {
-		this.css({
-			'background': inColor('flat-ocho'),
+			'background': inColor('flatseis'),
 			'box-shadow': shadows[5],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-nueve') {
+
+	else if(recept == 'flatsiete'){
 		this.css({
-			'background': inColor('flat-nueve'),
+			'background': inColor('flatsiete'),
 			'box-shadow': shadows[6],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-diez') {
+
+	else if(recept == 'flatocho'){
 		this.css({
-			'background': inColor('flat-diez'),
+			'background': inColor('flatocho'),
 			'box-shadow': shadows[7],
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-once'){
+
+	else if(recept == 'flat-t-dos'){
 		this.css({
-			'background': inColor('flat-once'),
-			'box-shadow': shadows[8],
+			'background': inColor('flat-t-dos'),
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-dosce'){
+
+	else if(recept == 'flat-t-tres'){
 		this.css({
-			'background': inColor('flat-dosce'),
-			'box-shadow': shadows[9],
+			'background': inColor('flat-t-tres'),
 			'color':'white',
 			'padding':'0.8em 1.3em',
 			'text-decoration':'none',
-			'outline': 'medium none'
-		})
-	}
-	else if(recept == 'flat-trece') {
-		this.css({
-			'background': inColor('flat-trece'),
-			'box-shadow': shadows[10],
-			'color': 'white',
-			'padding': '0.8em 1.3em',
-			'text-decoration': 'none',
-			'outline': 'medium none'
-		})
-	}
-	else if(recept == 'flat-catorce') {
-		this.css({
-			'background': inColor('flat-catorce'),
-			'box-shadow': shadows[11],
-			'color': 'white',
-			'padding': '0.8em 1.3em',
-			'text-decoration': 'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-quince') {
+
+	else if(recept == 'flat-t-cuatro'){
 		this.css({
-			'background': inColor('flat-quince'),
-			'box-shadow': shadows[12],
-			'color': 'white',
-			'padding': '0.8em 1.3em',
-			'text-decoration': 'none',
+			'background': inColor('flat-t-cuatro'),
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-diesiseis') {
+
+	else if(recept == 'flat-t-cinco'){
 		this.css({
-			'background': inColor('flat-diesiseis'),
-			'box-shadow': shadows[13],
-			'color': 'white',
-			'padding': '0.8em 1.3em',
-			'text-decoration': 'none',
+			'background': inColor('flat-t-cinco'),
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
-	else if(recept == 'flat-diesisiete') {
+
+	else if(recept == 'flat-t-six'){
 		this.css({
-			'background': inColor('flat-diesisiete'),
-			'box-shadow': shadows[14],
-			'color': 'white',
-			'padding': '0.8em 1.3em',
-			'text-decoration': 'none',
+			'background': inColor('flat-t-six'),
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'text-align': 'center',
 			'outline': 'medium none'
 		});
 	}
+
+	else if(recept == 'flat-t-sevent'){
+		this.css({
+			'background': inColor('flat-t-sevent'),
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'text-align': 'center',
+			'outline': 'medium none'
+		});
+	}
+
+	else if(recept == 'flat-t-eight') {
+		this.css({
+			'background': inColor('flat-t-eight'),
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'text-align': 'center',
+			'outline': 'medium none'
+		});
+	}
+
+	else if(recept == 'flat-t-nine'){
+		this.css({
+			'background': inColor('flat-t-nine'),
+			'color':'white',
+			'padding':'0.8em 1.3em',
+			'text-decoration':'none',
+			'text-align': 'center',
+			'outline': 'medium none'
+		});
+	}
+	
+	
 }	

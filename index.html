@@ -3,101 +3,240 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
 	<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 	<script src="jquery.flat.js"></script>
 	<style type="text/css">
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+	}
 	body {
 		background: #eee;
+	}
+	.header {
+		background-color: black;
+	}
+	.header h2 {
+		color: white;
+		padding: 0.8em 2em;
+		font-weight: 400;
 	}
 	a {
 		display: block;
 		width: 15%;
 	}
+	main {
+		width: 800px;
+		margin: 0 auto;
+	}
+	.headerCategory .title {
+		margin: 1em 0;
+		border-bottom: 1px solid black;
+		padding: 0.5em 0;
+	}
+	main section {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	main a {
+		display: block;
+		margin: 1em;
+	}
+
+	.steps {
+		margin: 1em 0;
+	}
+	.steps .steps--Header {
+		width: 100%;
+	}
+	code {
+		background: black;
+		color: white;
+		padding: 0.2em 2em;
+	}
+	.steps--ArticleOne .headerArticleOne {
+		margin: 1em 0;
+	}
+	
+	.containerSublime {
+		margin: 1em 0;
+	}
+	.containerSublime textarea {
+		width: 100%;
+		text-align: left;
+		resize: none;
+		overflow: hidden;
+		background: black;
+		color: white;
+		padding: 0.5em 0;
+	}
+	i {
+		display: block;
+	}
+
+
 	</style>
 </head>
 <body>
 
+	<header class="header">
+		<h2>Jquery Flat UI - Dev Edinsoncs</h2>
+	</header>
+
+	<main>
+			<header class="headerCategory">
+				<h2 class="title">Style one</h2>
+			</header>
+			<section>
+				
+				<a class="ab" href="#">flat('flatuno')</a>
+				
+
+				<br>
+				
+				<a class="item2" href="#">flat('flatdos')</a>
+
+				<br>
+
+				<a class="acx">flat('flattres')</a>
+
+				<br>
+
+				<a class="xa">flat('flatcuatro')</a>
+				
+				<br>
+
+				<a class="ff">flat('flatcinco')</a>
+
+				<br>
+
+				<a class="xl">flat('flatseis')</a>
+
+				<br>
+
+				<a class='ap' href="">flat('flatsiete')</a>
+
+				<br>
+
+				<a  class="xp">flat('flatocho')</a>
+
+				<br>
+			</section>
+			<header class="headerCategory">
+				<h2 class="title">Style Two</h2>
+			</header>
+			<section>
+				<a class="flat-t-dos">flat('flat-t-dos')</a>
+				<a class="flat-t-tres">flat('flat-t-tres')</a>
+				<a class="flat-t-cuatro">flat('flat-t-cuatro')</a>
+				<a class="flat-t-cinco">flat('flat-t-cinco')</a>
+
+				<a class="flat-t-six">flat('flat-t-seis')</a>
+
+				<a class="flat-t-sevent">flat('flat-t-siete')</a>
+
+				<a class="flat-t-eight">flat('flat-t-ocho')</a>
+
+				<a class="flat-t-nine">flat('flat-t-nueve')</a>
+			</section>
+
+
+			<section class="steps">
+				<header class="steps--Header">
+					<h2 class="title">
+						Initiliazie Jquery Flat UI 
+					</h2>
+					<p class="description">
+						Plugin jquery is one library, what enable is add styles buttons in DOM
+					</p>
+				</header>
+
+				<article class="steps--Article">
+					<div class="steps--ArticleOne">
+						<header class="headerArticleOne">
+							<h5 class="title">
+								Step 1
+								<span>Import jquery</span>
+							</h5>
+						</header>
+						<code>https://code.jquery.com/jquery-1.12.4.min.js</code>
+					</div>
+
+					<div class="steps--ArticleOne">
+						<header class="headerArticleOne">
+							<h5 class="title">
+								Step 2
+								<span>Import library and insert in Document HTML</span>
+							</h5>
+						</header>
+						<code>http://github.com/ockang/code.js</code>
+					</div>
+
+					<div class="steps--ArticleOne">
+						<header class="headerArticleOne">
+							<h5 class="title">
+								Step 3
+								<span>Identify the element</span>
+							</h5>
+						</header>
+						<code>All elements: span, a, strong and button, do reference with jquery</code>
+						<div class="containerSublime">
+							<textarea><a href='#' class='referenceItem'>My Button</a> | <strong class='referenceItem'></strong></textarea>
+						</div>
+						<header class="headerArticleOne">
+							<h5 class="title">
+								Step 4
+								<span>Identify the element jquery</span>
+							</h5>
+						</header>
+						<div class="containerSublime">
+							<textarea style="height: 200px">
+	<script>
 	
-	<a class="ab" href="#">Hola soy un button</a>
+	//Active button, call function flat('insertButton')
+	$(".referenceItem").flat('flatuno');
 
-	<br>
-	
-	<a class="as" href="#">Hola soy un button</a>
+	</script>
+							</textarea>
+						</div>
+					</div>
 
-	<br>
 
-	<a class="acx">Hola soy un button</a>
-
-	<br>
-
-	<a class="xa">Hola soy un button</a>
-	
-	<br>
-
-	<a class="ff">Hola soy un button</a>
-
-	<br>
-
-	<a class="xl">Hola soy un button</a>
-
-	<br>
-
-	<a class='ap' href="">Hola soy un button</a>
-
-	<br>
-
-	<a  class="xp">Hola soy un button</a>
-
-	<br>
-
-	<a class="do">Hola soy un button</a>
-
-	<br>
-
-	<a class="de">Hola soy un button</a>
-
-	<br>
-
-	<a class="xa">Hola soy un button</a>
-
-	</br>
-
-	<a class="gg">Hola soy un button</a>
-
-	</br>
-
-	<a class="fd">Hola soy un button</a>
-
-	</br>
-
-	<a class="ju">Hola soy un button</a>
-
-	</br>
-
-	<a class="yu">Hola soy un button</a>
-
-	</br>
-
-	<a class="sap">Hola soy un button</a>
+				</article>
+			</section>
+	</main>
 
 	<script>
 		$(".ab").flat('flatuno');
-		$(".as").flat('flatdos');
-		$(".acx").flat('flat-tres');
-		$(".xa").flat('flat-cuatro');
-		$(".ff").flat('flat-cinco');
-		$(".xl").flat('flat-seis');
-		$(".ap").flat('flat-siete');
-		$(".xp").flat('flat-ocho');
-		$(".do").flat('flat-nueve');
-		$(".de").flat('flat-diez');
-		$(".xa").flat('flat-once');
-		$(".gg").flat('flat-dosce');
-		$(".fd").flat('flat-trece');
-		$(".ju").flat('flat-catorce');
-		$(".ju").flat('flat-quince');
-		$(".yu").flat('flat-diesiseis');
-		$(".sap").flat('flat-diesisiete');
+		$(".item2").flat('flatdos');
+		$(".acx").flat('flattres');
+		$(".xa").flat('flatcuatro');
+		
+		$(".ff").flat('flatcinco');
+
+		$(".xl").flat('flatseis');
+		$(".ap").flat('flatsiete');
+
+		$(".xp").flat('flatocho');
+
+		$(".flat-t-dos").flat('flat-t-dos');
+		$(".flat-t-tres").flat('flat-t-tres');
+
+		$(".flat-t-cuatro").flat('flat-t-cuatro');
+
+		$(".flat-t-cinco").flat('flat-t-cinco');
+
+		$(".flat-t-six").flat('flat-t-six');
+
+		$(".flat-t-sevent").flat('flat-t-sevent');
+
+		$(".flat-t-eight").flat('flat-t-eight');
+
+		$(".flat-t-nine").flat('flat-t-nine');
+
 	</script>
 </body>
 </html>
